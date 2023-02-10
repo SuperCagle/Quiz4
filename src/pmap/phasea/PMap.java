@@ -24,8 +24,7 @@ public class PMap {
     ArrayList<ArrayList<Integer>> currMap = new ArrayList<ArrayList<Integer>>();
 
     public Integer size() {
-
-
+        return currMap.size();
     }
 
     /**
