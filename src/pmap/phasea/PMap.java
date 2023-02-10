@@ -35,7 +35,7 @@ public class PMap {
      *         mappings
      */
     public boolean isEmpty() {
-        // TODO
+        if(currMap.size() == 0){return true;}
         return false;
     }
 
