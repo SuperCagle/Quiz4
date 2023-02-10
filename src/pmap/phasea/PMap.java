@@ -21,7 +21,7 @@ public class PMap {
      * @return the number of key-value mappings in this map
      */
 
-    ArrayList<Integer> map = new ArrayList<String>();
+    ArrayList<ArrayList<Integer>> currMap = new ArrayList<ArrayList<Integer>>();
 
     public Integer size() {
 
