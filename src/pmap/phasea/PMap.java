@@ -89,8 +89,17 @@ public class PMap {
      *         key
      */
     public Integer get(Integer key) {
-
-        return 0;
+        if (containsKey(key) == false)
+        {
+            return null;
+        }
+        for(int i = 0; i < this.currMap.size(); i++)
+        {
+            if(currMap.get(i).getKey() == key)
+            {
+                return currMap.get(i).getValue();
+            }
+        }
     }
 
     /**
