@@ -146,7 +146,11 @@ public class PMap {
      *         <tt>null</tt> if there was no mapping for <tt>key</tt>.
      */
     public Integer remove(Integer key) {
-        // TODO
+        for(int i = 0; i < currMap.siz(); i++){
+            if(currMap.get(i).getKey() == key){
+                currMap.remove(i);
+            }
+        }
         return 0;
     }
 
