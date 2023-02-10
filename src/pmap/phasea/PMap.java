@@ -21,7 +21,7 @@ public class PMap {
      * @return the number of key-value mappings in this map
      */
 
-    ArrayList<ArrayList<Integer>> currMap = new ArrayList<ArrayList<Integer>>();
+    ArrayList<PEntry> currMap = new ArrayList<PEntry>();
 
     public Integer size() {
         return currMap.size();
@@ -48,14 +48,7 @@ public class PMap {
      *         specified key
      */
     public boolean containsKey(Integer key) {
-        if(this.isEmpty()){return false;}
-        for(int i = 0; i < this.currMap.size(); i++)
-        {
-            if(currMap.get(i).get(0) == key)
-            {
-                return true;
-            }
-        }
+
         return false;
     }
 
@@ -82,7 +75,7 @@ public class PMap {
      *         key
      */
     public Integer get(Integer key) {
-        // TODO
+
         return 0;
     }
 
