@@ -20,7 +20,11 @@ public class PMap {
      *
      * @return the number of key-value mappings in this map
      */
+
+    ArrayList<Integer> map = new ArrayList<String>();
+
     public Integer size() {
+
 
     }
 
@@ -45,7 +49,7 @@ public class PMap {
      *         specified key
      */
     public boolean containsKey(Integer key) {
-        // TODO
+
         return false;
     }
 
