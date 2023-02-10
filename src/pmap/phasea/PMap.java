@@ -68,7 +68,14 @@ public class PMap {
      *         specified value
      */
     public boolean containsValue(Integer value) {
-        // TODO
+        if(currMap.isEmpty() == true){
+            return false;
+        }
+        for(int i = 0; i < this.currMap.size(); i++){
+            if(currMap.get(i).getValue() == value){
+                return true;
+            }
+        }
         return false;
     }
 
