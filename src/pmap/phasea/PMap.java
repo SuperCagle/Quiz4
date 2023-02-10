@@ -123,7 +123,9 @@ public class PMap {
         {
             if(currMap.get(i).getKey() == key)
             {
-                currMap.setValue(value);
+                Integer oldValue = currMap.get(i).getValue();
+                currMap.get(i).setValue(value);
+                return oldValue;
             }
         }
     }
