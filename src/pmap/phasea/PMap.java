@@ -119,7 +119,13 @@ public class PMap {
         {
             return null;
         }
-        return 0;
+        for(int i = 0; i < this.currMap.size(); i++)
+        {
+            if(currMap.get(i).getKey() == key)
+            {
+                currMap.setValue(value);
+            }
+        }
     }
 
     /**
