@@ -48,7 +48,14 @@ public class PMap {
      *         specified key
      */
     public boolean containsKey(Integer key) {
-
+        if(this.isEmpty()){return false;}
+        for(int i = 0; i < this.currMap.size(); i++)
+        {
+            if(currMap.get(i).get(0) == key)
+            {
+                return true;
+            }
+        }
         return false;
     }
 
