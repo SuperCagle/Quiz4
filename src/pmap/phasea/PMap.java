@@ -89,7 +89,7 @@ public class PMap {
      *         key
      */
     public Integer get(Integer key) {
-        if (containsKey(key) == false)
+        if (currMap.containsKey(key) == false)
         {
             return null;
         }
@@ -115,7 +115,10 @@ public class PMap {
      *         <tt>null</tt> if there was no mapping for <tt>key</tt>.
      */
     public Integer put(Integer key, Integer value) {
-        // TODO
+        if(currMap.containKey() == false)
+        {
+            return null;
+        }
         return 0;
     }
 
