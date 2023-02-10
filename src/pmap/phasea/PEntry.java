@@ -1,6 +1,6 @@
 /*
- * Phase A <studentA EID><studentB EID>
- * Phase B <studentB EID><studentA EID>
+ * Phase A <gd7899><ntc445>
+ * Phase B <gd7899><ntc445>
  */
 
 package pmap.phasea;
